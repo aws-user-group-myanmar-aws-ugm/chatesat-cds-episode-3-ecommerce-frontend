@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "name": "BlackBerry KEYone 4/64GB - Black",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/Blackberry_KEYone_64GB_DualSIM.jpg",
+            "price": 559000,
+            "dimension": 4.5,
+            "spec": "4GB RAM, 64 GB Storage"
+        },
+        {
+            "name": "Galaxy A10 2/32 - Red",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/Galaxy_A10_Red.jpg",
+            "price": 189000,
+            "dimension": 6.2,
+            "spec": "2GB RAM, 32 GB Storage"
+        },
+        {
+            "name": "Galaxy Note9 6/128GB Alpine White",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/Galaxy_Note9_Alpine_White.jpg",
+            "price": 1499000,
+            "dimension": 6.4,
+            "spec": "6GB RAM, 128 GB Storage"
+        },
+        {
+            "name": "OnePlus 6T 10/256GB McLaren Edition",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/One_Plus_6T_McLaren.jpg",
+            "price": 1219000,
+            "dimension": 6.41,
+            "spec": "10GB RAM, 256 GB Storage "
+        },
+        {
+            "name": "Google Pixel 3 XL 4/128GB Clearly White",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/Pixel_3_XL_white.jpg",
+            "price": 1490000,
+            "dimension": 6.3,
+            "spec": "4GB RAM, 128 GB Storage"
+        },
+        {
+            "name": "iPhone XR 128GB Yellow (Dual SIM)",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/iPhone_XR_Yellow.jpg",
+            "price": 1430000,
+            "dimension": 6.5,
+            "spec": "3GB RAM, 128 GB Storage"
+        },
+        {
+            "name": "iPhone XS Max 256GB Space Gray (Dual SIM)",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/iPhone_XS_Max_Space_Gray.jpg",
+            "price": 2170000,
+            "dimension": 6.5,
+            "spec": "4GB RAM, 256 GB Storage"
+        },
+        {
+            "name": "iPhone X 256GB Space Gray",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/iPhone_X_Space_Gray.jpg",
+            "price": 1630000,
+            "dimension": 5.8,
+            "spec": "3GB RAM, 256 GB Storage"
+        },
+        {
+            "name": "Galaxy Note10 8/256GB",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/note10.png",
+            "price": 1499000,
+            "dimension": 6.3,
+            "spec": "8GB RAM, 256 GB Storage"
+        },
+        {
+            "name": "Galaxy Note10+ 12/256GB",
+            "image": "https://staticimages-awsugmm.s3-ap-southeast-1.amazonaws.com/note10_plus.png",
+            "price": 1699000,
+            "dimension": 6.8,
+            "spec": "12GB RAM, 256 GB Storage"
+        }
+    ]
+}
