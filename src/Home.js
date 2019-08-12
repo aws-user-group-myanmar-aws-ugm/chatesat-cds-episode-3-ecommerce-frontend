@@ -5,7 +5,8 @@ import {
   Grid,
   Header,
   Image,
-  List
+  List,
+  Placeholder
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
@@ -35,11 +36,15 @@ class Home extends React.Component {
             <Grid.Row columns={3} key={index}>
               {row.map(column => (
                 <Grid.Column key={column.id}>
-                  <Image src={column.image} />
+                  <Image
+                    src={column.image}
+                    onError={i => (i.target.src = require("./404.png"))}
+                    style={{ width: "400px", height: "400px" }}
+                  />
                   <Header as="h2">
                     {column.name}
                     <Header.Subheader>
-                      {column.price.toLocaleString()}
+                      {column.price.toLocaleString()} MMK
                     </Header.Subheader>
                   </Header>
                   <List>
