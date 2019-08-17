@@ -21,7 +21,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`http://${api_host}:8000/api/phones`)
+    fetch(`http://${api_host}/api/phones`)
       .then(data => data.json())
       .then(json => this.setState(Object.assign(this.state, { data: json })));
   }
