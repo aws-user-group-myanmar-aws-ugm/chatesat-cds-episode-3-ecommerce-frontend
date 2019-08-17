@@ -11,8 +11,6 @@ import {
   Button
 } from "semantic-ui-react";
 
-import { find, propEq } from "ramda";
-
 import { api_host } from "./constants";
 
 export default class Details extends React.Component {
