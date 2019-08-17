@@ -5,12 +5,12 @@ import {
   Grid,
   Header,
   Image,
-  List,
-  Placeholder
+  List
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
-
 import { splitEvery } from "ramda";
+
+import { api_host } from "./constants";
 
 class Home extends React.Component {
   constructor(props) {
@@ -21,8 +21,9 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    let data = require("./sources.json");
-    this.setState(data);
+    fetch(`http://${api_host}:8000/api/phones`)
+      .then(data => data.json())
+      .then(json => this.setState(Object.assign(this.state, { data: json })));
   }
 
   render() {
@@ -30,7 +31,7 @@ class Home extends React.Component {
 
     return (
       <Container>
-        <Header as="h1">SellPhones</Header>
+        <Header as="h1">SellPhones™</Header>
         <Grid>
           {splitEvery(3, this.state.data).map((row, index) => (
             <Grid.Row columns={3} key={index}>
@@ -39,12 +40,12 @@ class Home extends React.Component {
                   <Image
                     src={column.image}
                     onError={i => (i.target.src = require("./404.png"))}
-                    style={{ width: "400px", height: "400px" }}
+                    style={{ width: "400px", height: "auto" }}
                   />
                   <Header as="h2">
                     {column.name}
                     <Header.Subheader>
-                      {column.price.toLocaleString()} MMK
+                      {parseInt(column.price).toLocaleString()} MMK
                     </Header.Subheader>
                   </Header>
                   <List>
